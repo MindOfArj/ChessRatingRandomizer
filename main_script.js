@@ -134,332 +134,38 @@ function getTimeControl() {
 }
 
 function calculateBlitzTier(ratingNum) {
-  if (ratingNum < 200) {
-    return '🔔 Bronze I';
-  } else if (ratingNum < 300) {
-    return '🔔 Bronze II';
-  } else if (ratingNum < 400) {
-    return '🔔 Bronze III';
-  } else if (ratingNum < 500) {
-    return '🔔 Bronze IV';
-  } else if (ratingNum < 550) {
-    return '🥄 Silver I';
-  } else if (ratingNum < 600) {
-    return '🥄 Silver II';
-  } else if (ratingNum < 650) {
-    return '🥄 Silver III';
-  } else if (ratingNum < 700) {
-    return '🥄 Silver IV';
-  } else if (ratingNum < 775) {
-    return '⚜ Gold I';
-  } else if (ratingNum < 850) {
-    return '⚜ Gold II';
-  } else if (ratingNum < 925) {
-    return '⚜ Gold III';
-  } else if (ratingNum < 1000) {
-    return '⚜ Gold IV';
-  } else if (ratingNum < 1075) {
-    return '⚔️ Platinum I';
-  } else if (ratingNum < 1150) {
-    return '⚔️ Platinum II';
-  } else if (ratingNum < 1225) {
-    return '⚔️ Platinum III';
-  } else if (ratingNum < 1300) {
-    return '⚔️ Platinum IV';
-  } else if (ratingNum < 1400) {
-    return '💎 Diamond I';
-  } else if (ratingNum < 1500) {
-    return '💎 Diamond II';
-  } else if (ratingNum < 1600) {
-    return '💎 Diamond III';
-  } else if (ratingNum < 1700) {
-    return '💎 Diamond IV';
-  } else if (ratingNum < 1800) {
-    return '👑 Champion I';
-  } else if (ratingNum < 1900) {
-    return '👑 Champion II';
-  } else if (ratingNum < 2000) {
-    return '👑 Champion III';
-  } else if (ratingNum < 2100) {
-    return '👑 Champion IV';
-  } else if (ratingNum < 2225) {
-    return '🔮 Legendary I';
-  } else if (ratingNum < 2350) {
-    return '🔮 Legendary II';
-  } else if (ratingNum < 2475) {
-    return '🔮 Legendary III';
-  } else if (ratingNum < 2600) {
-    return '🔮 Legendary IV';
-  } else if (ratingNum < 2850) {
-    return 'Legendary 🏆 Champion';
-  } else if (ratingNum < 3000) {
-    return 'Mythical 🏆 Champion'
+  var randomRating = random(200,3000);
+  if (ratingNum > -1) {
+    return randomRating;
   } else {
-    return '✨ Supreme Champion ✨'
+    return '✨ Supreme Champion ✨';
   }
 }
 
 function calculateRapidTier(ratingNum) {
-  if (ratingNum < 200) {
-    return '🔔 Bronze I';
-  } else if (ratingNum < 300) {
-    return '🔔 Bronze II';
-  } else if (ratingNum < 400) {
-    return '🔔 Bronze III';
-  } else if (ratingNum < 500) {
-    return '🔔 Bronze IV';
-  } else if (ratingNum < 550) {
-    return '🥄 Silver I';
-  } else if (ratingNum < 600) {
-    return '🥄 Silver II';
-  } else if (ratingNum < 650) {
-    return '🥄 Silver III';
-  } else if (ratingNum < 700) {
-    return '🥄 Silver IV';
-  } else if (ratingNum < 775) {
-    return '⚜ Gold I';
-  } else if (ratingNum < 850) {
-    return '⚜ Gold II';
-  } else if (ratingNum < 925) {
-    return '⚜ Gold III';
-  } else if (ratingNum < 1000) {
-    return '⚜ Gold IV';
-  } else if (ratingNum < 1050) {
-    return '⚔️ Platinum I';
-  } else if (ratingNum < 1100) {
-    return '⚔️ Platinum II';
-  } else if (ratingNum < 1150) {
-    return '⚔️ Platinum III';
-  } else if (ratingNum < 1200) {
-    return '⚔️ Platinum IV';
-  } else if (ratingNum < 1275) {
-    return '💎 Diamond I';
-  } else if (ratingNum < 1350) {
-    return '💎 Diamond II';
-  } else if (ratingNum < 1425) {
-    return '💎 Diamond III';
-  } else if (ratingNum < 1500) {
-    return '💎 Diamond IV';
-  } else if (ratingNum < 1600) {
-    return '👑 Champion I';
-  } else if (ratingNum < 1700) {
-    return '👑 Champion II';
-  } else if (ratingNum < 1800) {
-    return '👑 Champion III';
-  } else if (ratingNum < 1900) {
-    return '👑 Champion IV';
-  } else if (ratingNum < 2025) {
-    return '🔮 Legendary I';
-  } else if (ratingNum < 2150) {
-    return '🔮 Legendary II';
-  } else if (ratingNum < 2275) {
-    return '🔮 Legendary III';
-  } else if (ratingNum < 2400) {
-    return '🔮 Legendary IV';
-  } else if (ratingNum < 2600) {
-    return 'Legendary 🏆 Champion';
-  } else if (ratingNum < 2800) {
-    return 'Mythical 🏆 Champion'
+  var randomRating = random(200,3000);
+  if (ratingNum > -1) {
+    return randomRating;
   } else {
-    return '✨ Supreme Champion ✨'
-  }
-}
-
-function calculateDailyTier(ratingNum) {
-  if (ratingNum < 200) {
-    return '🔔 Bronze I';
-  } else if (ratingNum < 400) {
-    return '🔔 Bronze II';
-  } else if (ratingNum < 600) {
-    return '🔔 Bronze III';
-  } else if (ratingNum < 800) {
-    return '🔔 Bronze IV';
-  } else if (ratingNum < 850) {
-    return '🥄 Silver I';
-  } else if (ratingNum < 900) {
-    return '🥄 Silver II';
-  } else if (ratingNum < 950) {
-    return '🥄 Silver III';
-  } else if (ratingNum < 1000) {
-    return '🥄 Silver IV';
-  } else if (ratingNum < 1050) {
-    return '⚜ Gold I';
-  } else if (ratingNum < 1100) {
-    return '⚜ Gold II';
-  } else if (ratingNum < 1150) {
-    return '⚜ Gold III';
-  } else if (ratingNum < 1200) {
-    return '⚜ Gold IV';
-  } else if (ratingNum < 1250) {
-    return '⚔️ Platinum I';
-  } else if (ratingNum < 1300) {
-    return '⚔️ Platinum II';
-  } else if (ratingNum < 1350) {
-    return '⚔️ Platinum III';
-  } else if (ratingNum < 1400) {
-    return '⚔️ Platinum IV';
-  } else if (ratingNum < 1450) {
-    return '💎 Diamond I';
-  } else if (ratingNum < 1500) {
-    return '💎 Diamond II';
-  } else if (ratingNum < 1550) {
-    return '💎 Diamond III';
-  } else if (ratingNum < 1600) {
-    return '💎 Diamond IV';
-  } else if (ratingNum < 1700) {
-    return '👑 Champion I';
-  } else if (ratingNum < 1800) {
-    return '👑 Champion II';
-  } else if (ratingNum < 1900) {
-    return '👑 Champion III';
-  } else if (ratingNum < 2000) {
-    return '👑 Champion IV';
-  } else if (ratingNum < 2125) {
-    return '🔮 Legendary I';
-  } else if (ratingNum < 2250) {
-    return '🔮 Legendary II';
-  } else if (ratingNum < 2375) {
-    return '🔮 Legendary III';
-  } else if (ratingNum < 2500) {
-    return '🔮 Legendary IV';
-  } else if (ratingNum < 2700) {
-    return 'Legendary 🏆 Champion';
-  } else if (ratingNum < 2900) {
-    return 'Mythical 🏆 Champion'
-  } else {
-    return '✨ Supreme Champion ✨'
+    return '✨ Supreme Champion ✨';
   }
 }
 
 function uscfNormalizedBlitzTier(ratingNum) {
-  if (ratingNum < 200) {
-    return '🔔 Bronze I';
-  } else if (ratingNum < 400) {
-    return '🔔 Bronze II';
-  } else if (ratingNum < 600) {
-    return '🔔 Bronze III';
-  } else if (ratingNum < 800) {
-    return '🔔 Bronze IV';
-  } else if (ratingNum < 1000) {
-    return '🥄 Silver I';
-  } else if (ratingNum < 1133) {
-    return '🥄 Silver II';
-  } else if (ratingNum < 1266) {
-    return '🥄 Silver III';
-  } else if (ratingNum < 1400) {
-    return '🥄 Silver IV';
-  } else if (ratingNum < 1512) {
-    return '⚜ Gold I';
-  } else if (ratingNum < 1624) {
-    return '⚜ Gold II';
-  } else if (ratingNum < 1736) {
-    return '⚜ Gold III';
-  } else if (ratingNum < 1850) {
-    return '⚜ Gold IV';
-  } else if (ratingNum < 1910) {
-    return '⚔️ Platinum I';
-  } else if (ratingNum < 1960) {
-    return '⚔️ Platinum II';
-  } else if (ratingNum < 2020) {
-    return '⚔️ Platinum III';
-  } else if (ratingNum < 2100) {
-    return '⚔️ Platinum IV';
-  } else if (ratingNum < 2150) {
-    return '💎 Diamond I';
-  } else if (ratingNum < 2200) {
-    return '💎 Diamond II';
-  } else if (ratingNum < 2250) {
-    return '💎 Diamond III';
-  } else if (ratingNum < 2300) {
-    return '💎 Diamond IV';
-  } else if (ratingNum < 2350) {
-    return '👑 Champion I';
-  } else if (ratingNum < 2400) {
-    return '👑 Champion II';
-  } else if (ratingNum < 2450) {
-    return '👑 Champion III';
-  } else if (ratingNum < 2500) {
-    return '👑 Champion IV';
-  } else if (ratingNum < 2575) {
-    return '🔮 Legendary I';
-  } else if (ratingNum < 2650) {
-    return '🔮 Legendary II';
-  } else if (ratingNum < 2725) {
-    return '🔮 Legendary III';
-  } else if (ratingNum < 2800) {
-    return '🔮 Legendary IV';
-  } else if (ratingNum < 2900) {
-    return 'Legendary 🏆 Champion';
-  } else if (ratingNum < 3000) {
-    return 'Mythical 🏆 Champion'
+  var randomRating = random(200,3000);
+  if (ratingNum > -1) {
+    return randomRating;
   } else {
-    return '✨ Supreme Champion ✨'
+    return '✨ Supreme Champion ✨';
   }
 }
 
 function uscfNormalizedRapidTier(ratingNum) {
-  if (ratingNum < 250) {
-    return '🔔 Bronze I';
-  } else if (ratingNum < 500) {
-    return '🔔 Bronze II';
-  } else if (ratingNum < 750) {
-    return '🔔 Bronze III';
-  } else if (ratingNum < 1000) {
-    return '🔔 Bronze IV';
-  } else if (ratingNum < 1200) {
-    return '🥄 Silver I';
-  } else if (ratingNum < 1275) {
-    return '🥄 Silver II';
-  } else if (ratingNum < 1350) {
-    return '🥄 Silver III';
-  } else if (ratingNum < 1425) {
-    return '🥄 Silver IV';
-  } else if (ratingNum < 1500) {
-    return '⚜ Gold I';
-  } else if (ratingNum < 1625) {
-    return '⚜ Gold II';
-  } else if (ratingNum < 1750) {
-    return '⚜ Gold III';
-  } else if (ratingNum < 1850) {
-    return '⚜ Gold IV';
-  } else if (ratingNum < 1910) {
-    return '⚔️ Platinum I';
-  } else if (ratingNum < 1960) {
-    return '⚔️ Platinum II';
-  } else if (ratingNum < 2020) {
-    return '⚔️ Platinum III';
-  } else if (ratingNum < 2100) {
-    return '⚔️ Platinum IV';
-  } else if (ratingNum < 2150) {
-    return '💎 Diamond I';
-  } else if (ratingNum < 2200) {
-    return '💎 Diamond II';
-  } else if (ratingNum < 2250) {
-    return '💎 Diamond III';
-  } else if (ratingNum < 2300) {
-    return '💎 Diamond IV';
-  } else if (ratingNum < 2350) {
-    return '👑 Champion I';
-  } else if (ratingNum < 2400) {
-    return '👑 Champion II';
-  } else if (ratingNum < 2450) {
-    return '👑 Champion III';
-  } else if (ratingNum < 2500) {
-    return '👑 Champion IV';
-  } else if (ratingNum < 2575) {
-    return '🔮 Legendary I';
-  } else if (ratingNum < 2650) {
-    return '🔮 Legendary II';
-  } else if (ratingNum < 2725) {
-    return '🔮 Legendary III';
-  } else if (ratingNum < 2800) {
-    return '🔮 Legendary IV';
-  } else if (ratingNum < 2900) {
-    return 'Legendary 🏆 Champion';
-  } else if (ratingNum < 3000) {
-    return 'Mythical 🏆 Champion'
+  var randomRating = random(200,3000);
+  if (ratingNum > -1) {
+    return randomRating;
   } else {
-    return '✨ Supreme Champion ✨'
+    return '✨ Supreme Champion ✨';
   }
 }
 
